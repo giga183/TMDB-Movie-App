@@ -1,9 +1,9 @@
-import { privateAxios } from '../config/axios'
-import Category from '../types/categories'
-import { apiKey } from './getMovies'
+import { privateAxios } from "../config/axios";
+
+import { apiKey } from "./getMovies";
 
 export const getMoviesDetails = async (movieId: string) => {
-  return privateAxios.get<{ categories: Category }>(
+  return privateAxios.get<{ movieDetails: [] }>(
     `/movie/${movieId}?api_key=${apiKey}`
-  )
-}
+  );
+};
