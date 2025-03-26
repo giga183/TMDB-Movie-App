@@ -9,7 +9,7 @@ import ContactPage from "./pages/Contactpage";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { TopRatedMovies } from "./pages/TopRatedMovies";
 import Upcoming from "./pages/Upcoming";
-import MovieDetails from "./pages/MovieDetails";
+import MovieDetails from "./pages/MovieDetails.jsx";
 
 const queryClient = new QueryClient({
   defaultOptions: {
